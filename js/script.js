@@ -16,6 +16,7 @@ function myButtonClicked() {
   }
   if (userNumber != randomNumber) {
     document.getElementById("answer").innerHTML = 
-      "<p>You guessed incorrectly"
+      "<p>You guessed incorrectly" +
+      "<br/>The correct answer was: " + randomNumber + "</p>"
   }
 }

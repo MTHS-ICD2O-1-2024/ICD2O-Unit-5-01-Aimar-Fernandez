@@ -34,7 +34,7 @@
       </header>
       <main class="mdl-layout__content">
         <div>
-          <img src="./images/notebook-animation.svg" alt="Laptop Image">
+          <img src="./images/dice.gif" alt="dice gif" />
         </div>
         <br />
         <div class="page-content">Enter a random number between 1 and 6</div>
@@ -48,20 +48,21 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="sample4"
+              id="user-number"
             />
             <label class="mdl-textfield__label" for="sample4"> Number...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
+          <br />
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+            onclick="myButtonClicked()"
+            type="button"
+          >
+            Answer
+          </button>
         </form>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-          onclick="myButtonClicked()"
-          type="button"
-        >
-          Answer
-        </button>
         <br />
         <br />
         <div class="page-content-answer">
